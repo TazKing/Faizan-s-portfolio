@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan's portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/93f7f1b1a3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar"> 
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="rebeccapurple"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#box2">Education</a></li>
+            <li><a href="#box3">Epxerience</a></li>
+            <li><a href="#box4">Projects</a></li>
+            <li><a href="#box5">Skills</a></li>
+            <li><a href="#box6">Contact me</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Faizan's <span>  Portfolio</span></a></li>
+            <li class="hideOnMobile"><a href="#box2">Education</a></li>
+            <li class="hideOnMobile"><a href="#box3">Epxerience</a></li>
+            <li class="hideOnMobile"><a href="#box4">Projects</a></li>
+            <li class="hideOnMobile"><a href="#box5">Skills</a></li>
+            <li class="hideOnMobile"><a href="#box6">Contact me</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="rebeccapurple"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+  
+    
+        <div class="box1" id="box1">
+            <p> Hi,My name is <br><span>Faizan Ahmad</span><br>
+                
+                
+                <span id="element"></span>  
+            </p>
+            
+            <img src="me-3.png" alt="Source not found">
+        </div>
+    
+        <div class="box2" id="box2">
+            <h1>Education:</h1>
+            <ol>
+                <li>Matric : Passed <br>
+                    Duration :2023-2024</li>
+                <li>Inter : Passed <br>
+                    Duration :2025-2026
+                </li>
+                <li>Master : Passed<br>
+                    Duration :2030
+                </li>
+                <li>
+                    PHD : Passed<br>
+                    Duration : 2034
+                </li>
+            </ol>
+        </div>
+    
+        <div class="box3" id="box3">
+            <h1>Experience:</h1>
+            <ol>
+                <li>2 years experience of coding</li>
+                <li>2 yesrs of experience in wed devolpment (Fronttend)</li>
+                <li>1 year of coding in C</li>
+                <li># years of experience of Python</li>
+            </ol>
+        </div>
+    
+        <div class="box4" id="box4">
+            <h1>Projects:</h1>
+            <ol>
+                <li>Made an website on Pakistan's Knowlege</li>
+                <li>Made an website on Movies</li>
+                <li>Made an website of Coding lectures </li>
+                <li>Made the clone of</li>
+            </ol>
+        </div>
+    
+        <div class="box5" id="box5">
+            <h1>Skills:</h1>
+            <ol>
+                <li>Graphic designer <br>
+                    Level : intermediate
+                </li>
+                <li>Web devoleper <br>
+                    Level : intermediate
+                </li>
+                <li>Crickter <br>
+                    level : intermediate </li>
+                <li>Martial artist <br>
+                    Level : intermediate </li>
+            </ol>
+    
+        </div>
+    
+        <div class="box6" id="box6">
+            <h1>ContactMe:</h1>
+            <ol>
+                <li>
+                    <i class="fa-brands fa-square-whatsapp" style="color: #25D366;"></i>
+                    <span>Whatsapp</span>
+                    <div class="num">
+                        +92-3325562921
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                    Git Hub
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/direct/inbox/" target="_blank"><i class="fa-brands fa-instagram"
+                            style="color: #d62976;"></i></a>
+                    Instagram
+                </li>
+    
+                <li>
+                    <i class="fa-solid fa-envelope" style="color:#3e65cf;"></i>
+                    <span>Gmail</span>
+                    <div class="num">
+                        tazking853@gmail.com
+                    </div>
+                </li>
+            </ol>
+    
+        </div>
+        <div class="arrow up-arrow" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></div>
+        <div class="arrow down-arrow" onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></div>
+    
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web devoloper.', 'Graphic designer.', 'Full Stack devolper.'],
+                typeSpeed: 50,
+                
+            });
+            function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+ 
+
+    
+</body>
+</html>
